@@ -1,130 +1,292 @@
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
-attachments :
-  slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
+title       : Lab 1 - Intro to probability and data
+description : Questions for Lab 1
 
----
-## A really bad movie
+--- type:RStudioMultipleChoiceExercise xp:50 skills:1 key:02d4222b54
+##  Question 1
+<strong>Follow the directions in the console to open the R Markdown file:</strong>
 
-```yaml
-type: MultipleChoiceExercise
-lang: r
-xp: 50
-skills: 1
-key: d03cb64808
+```Type 'go()' and hit Enter to get started!```
+
+You can use the RStudio platform just like you would on your home computer.
+
+The markdown file contains the instuctions to answer the multiple choice question below.
+
+<strong>Q1. How many variables are included in this data set?</strong>
+
+*** =instructions
+- 2
+- 3
+- 4
+- 82
+- 1710
+*** =hint
+Check out the instructions in the .Rmd file to answer the multiple choice question.
+
+*** =sct
+```{r,eval=FALSE}
+msg1 <- "Try again."
+msg2 <- "Great work!"
+msg3 <- "Keep trying!"
+msg4 <- "Nope."
+msg5 <- "Not quite."
+test_mc(2, feedback_msgs = c(msg1, msg2, msg3, msg4, msg5))
+```
+*** =attachments
+.Rprofile: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex1.Rprofile
+.init.R: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex1.init.R
+lab1_ex1.Rmd: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex1.Rmd
+lab.css: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab.css
+
+--- type:RStudioMultipleChoiceExercise xp:50 skills:1 key:5440b387f2
+## Question 2
+<strong>Follow the directions in the console to open the R Markdown file.</strong>
+
+You can use the RStudio platform just like you would on your home computer.
+
+The markdown file contains the instuctions to answer the multiple choice question below.
+
+<strong>Q2. What command would you use to extract just the counts of girls born?</strong>
+
+*** =instructions
+- `arbuthnot$boys`
+- `arbuthnot$girls`
+- `girls`
+- `arbuthnot[girls]`
+- `$girls`
+
+*** =hint
+Check out the instructions in the .Rmd file to answer the multiple choice question.
+
+*** =sct
+```{r,eval=FALSE}
+msg1 <- "Not quite."
+msg2 <- "Nice job!"
+msg3 <- "Keep trying!"
+msg4 <- "Nope!"
+msg5 <- "Try again!"
+
+test_mc(2, feedback_msgs = c(msg1, msg2, msg3, msg4, msg5))
 ```
 
-Have a look at the plot that showed up in the viewer to the right. Which type of movie has the worst rating assigned to it?
+*** =attachments
+.Rprofile: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex2.Rprofile
+.init.R: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex2.init.R
+lab1_ex2.Rmd: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex2.Rmd
+lab.css: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab.css
 
-`@instructions`
-- Adventure
-- Action
-- Animation
-- Comedy
+--- type:RStudioMultipleChoiceExercise xp:50 skills:1 key:eb6689ed9c
+## Question 3
+<strong>Follow the directions in the console to open the R Markdown file.</strong>
 
-`@hint`
-Have a look at the plot. Which color does the point with the lowest rating have?
+You can use the RStudio platform just like you would on your home computer.
 
-`@pre_exercise_code`
-```{r}
-# The pre exercise code runs code to initialize the user's workspace.
-# You can use it to load packages, initialize datasets and draw a plot in the viewer
+The markdown file contains the instuctions to answer the multiple choice question below.
 
-movies <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
+<strong>Q3. Which of the following best describes the number of girls baptised over the years included in this dataset?
 
-library(ggplot2)
+*** =instructions
+- There appears to be no trend in the number of girls baptised from 1629 to 1710.
+- There is initially an increase in the number of girls baptised, which peaks around 1640. After 1640 there is a decrease in the number of girls baptised, but the number begins to increase again in 1660. Overall the trend is an increase in the number of girls baptised.
+- There is initially an increase in the number of girls baptised. This number peaks around 1640 and then after 1640 the number of girls baptised decreases.
+- The number of girls baptised has decreased over time.
+- There is an initial increase in the number of girls baptised but this number appears to level around 1680 and not change after that time point.
 
-ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
+
+*** =hint
+Check out the instructions in the .Rmd file to answer the multiple choice question.
+
+*** =sct
+```{r,eval=FALSE}
+msg1 <- "Try again."
+msg2 <- "Awesome!"
+msg3 <- "Keep trying!"
+msg4 <- "Try again."
+msg5 <- "Try again."
+
+test_mc(2, feedback_msgs = c(msg1, msg2, msg3, msg4, msg5))
+```
+*** =attachments
+.Rprofile: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex3.Rprofile
+.init.R: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex3.init.R
+lab1_ex3.Rmd: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex3.Rmd
+lab.css: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab.css
+
+--- type:RStudioMultipleChoiceExercise xp:50 skills:1 key:e64497e7f4
+## Question 4
+<strong>Follow the directions in the console to open the R Markdown file.</strong>
+
+You can use the RStudio platform just like you would on your home computer.
+
+The markdown file contains the instuctions to answer the multiple choice question below.
+
+<strong>Q4. How many variables are included in this data set?</strong>
+
+*** =instructions
+- 2
+- 3
+- 4
+- 74
+- 2013
+
+
+*** =hint
+Check out the instructions in the .Rmd file to answer the multiple choice question.
+
+*** =sct
+```{r,eval=FALSE}
+msg1 <- "Try again."
+msg2 <- "You got it!"
+msg3 <- "Keep trying!"
+msg4 <- "Try again."
+msg5 <- "Try again."
+
+test_mc(2, feedback_msgs = c(msg1, msg2, msg3, msg4, msg5))
 ```
 
-`@sct`
-```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+*** =attachments
+.Rprofile: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex4.Rprofile
+.init.R: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex4.init.R
+lab1_ex4.Rmd: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex4.Rmd
+lab.css: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab.css
 
-msg_bad <- "That is not correct!"
-msg_success <- "Exactly! There seems to be a very bad action movie in the dataset."
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+--- type:RStudioMultipleChoiceExercise xp:50 skills:1 key:b073c8a4d3
+## Question 5
+<strong>Follow the directions in the console to open the R Markdown file.</strong>
+
+You can use the RStudio platform just like you would on your home computer.
+
+The markdown file contains the instuctions to answer the multiple choice question below.
+
+<strong>Q5. Has the proportion of boys born in the US has decreased over time.
+
+*** =instructions
+- TRUE
+- FALSE
+
+*** =hint
+Check out the instructions in the .Rmd file to answer the multiple choice question.
+
+*** =sct
+```{r,eval=FALSE}
+msg1 <- "That's right!"
+msg2 <- "Try again."
+
+test_mc(1, feedback_msgs = c(msg1, msg2))
 ```
 
----
-## More movies
+*** =attachments
+.Rprofile: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex5.Rprofile
+.init.R: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex5.init.R
+lab1_ex5.Rmd: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex5.Rmd
+lab.css: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab.css
 
-```yaml
-type: NormalExercise
-lang: r
-xp: 100
-skills: 1
-key: 97ebb40b56
+--- type:RStudioMultipleChoiceExercise xp:50 skills:1 key:8aee5ae535
+## Question 6
+<strong>Follow the directions in the console to open the R Markdown file.</strong>
+
+You can use the RStudio platform just like you would on your home computer.
+
+The markdown file contains the instuctions to answer the multiple choice question below.
+
+<strong>Q6. Which of the following statements is true?</strong>
+
+*** =instructions
+- Every year there are more girls born than boys.
+- Every year there are more boys born than girls.
+- Half of the years there are more boys born, and the other half more girls born.
+
+
+*** =hint
+Check out the instructions in the .Rmd file to answer the multiple choice question.
+
+*** =sct
+```{r,eval=FALSE}
+msg1 <- "Try again."
+msg2 <- "Great work!"
+msg3 <- "Keep trying!"
+test_mc(2, feedback_msgs = c(msg1, msg2, msg3))
 ```
 
-In the previous exercise, you saw a dataset about movies. In this exercise, we'll have a look at yet another dataset about movies!
+*** =attachments
+.Rprofile: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex6.Rprofile
+.init.R: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex6.init.R
+lab1_ex6.Rmd: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex6.Rmd
+lab.css: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab.css
 
-A dataset with a selection of movies, `movie_selection`, is available in the workspace.
+--- type:RStudioMultipleChoiceExercise xp:50 skills:1 key:63abfd6950
+## Question 7
+<strong>Follow the directions in the console to open the R Markdown file.</strong>
 
-`@instructions`
-- Check out the structure of `movie_selection`.
-- Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
-- Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
+You can use the RStudio platform just like you would on your home computer.
 
-`@hint`
-- Use `str()` for the first instruction.
-- For the second instruction, you should use `...[movie_selection$Rating >= 5, ]`.
-- For the plot, use `plot(x = ..., y = ..., col = ...)`.
+The markdown file contains the instuctions to answer the multiple choice question below.
 
-`@pre_exercise_code`
-```{r}
-# You can also prepare your dataset in a specific way in the pre exercise code
-load(url("https://s3.amazonaws.com/assets.datacamp.com/course/teach/movies.RData"))
-movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"), c("Genre", "Rating", "Run")]
+<strong>Q7. Which of the following best describes the trend?</strong>
 
-# Clean up the environment
-rm(Movies)
+*** =instructions
+- There appears to be no trend in the boy-to-girl ratio from 1940 to 2013.
+- There is initially an increase in boy-to-girl ratio, which peaks around 1960. After 1960 there is a decrease in the boy-to-girl ratio, but the number begins to increase in the mid 1970s.
+- There is initially a decrease in the boy-to-girl ratio, and then an increase between 1960 and 1970, followed by a decrease.
+- The boy-to-girl ratio has increased over time.
+- There is an initial decrease in the boy-to-girl ratio born but this number appears to level around 1960 and remain constant since then.
+
+*** =hint
+Check out the instructions in the .Rmd file to answer the multiple choice question.
+
+*** =sct
+```{r,eval=FALSE}
+msg1 <- "Try again."
+msg2 <- "Keep trying!"
+msg3 <- "Awesome, you did great!"
+msg4 <- "Try again."
+msg5 <- "Try again."
+
+test_mc(3, feedback_msgs = c(msg1, msg2, msg3, msg4, msg5))
 ```
 
-`@sample_code`
-```{r}
-# movie_selection is available in your workspace
+*** =attachments
+.Rprofile: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex7.Rprofile
+.init.R: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex7.init.R
+lab1_ex7.Rmd: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex7.Rmd
+lab.css: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab.css
 
-# Check out the structure of movie_selection
+--- type:RStudioMultipleChoiceExercise xp:50 skills:1 key:ca476ff87f
+## Question 8
+<strong>Follow the directions in the console to open the R Markdown file.</strong>
+
+You can use the RStudio platform just like you would on your home computer.
+
+The markdown file contains the instuctions to answer the multiple choice question below.
+
+<strong>Q8. In what year did we see the most total number of births in the U.S.?</strong>
+
+*** =instructions
+- 1940
+- 1957
+- 1961
+- 1991
+- 2007
 
 
-# Select movies that have a rating of 5 or higher: good_movies
+*** =hint
+Check out the instructions in the .Rmd file to answer the multiple choice question.
 
+*** =sct
+```{r,eval=FALSE}
+msg1 <- "Try again."
+msg2 <- "Try again."
+msg3 <- "Keep trying!"
+msg4 <- "Try again."
+msg5 <- "Awesome!"
 
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
-
+test_mc(5, feedback_msgs = c(msg1, msg2, msg3, msg4, msg5))
+success_msg("Click [here](https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/ch1_key.Rmd) to get a complete Rmarkdown file of the exercises in this Lab and click [here](https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/ch1_key.html) to get the Knitted HTML output.")
 ```
 
-`@solution`
-```{r}
-# movie_selection is available in your workspace
-
-# Check out the structure of movie_selection
-str(movie_selection)
-
-# Select movies that have a rating of 5 or higher: good_movies
-good_movies <- movie_selection[movie_selection$Rating >= 5, ]
-
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
-plot(good_movies$Run, good_movies$Rating, col = good_movies$Genre)
-```
-
-`@sct`
-```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
-test_function("str", args = "object",
-              not_called_msg = "You didn't call `str()`!",
-              incorrect_msg = "You didn't call `str(object = ...)` with the correct argument, `object`.")
-
-test_object("good_movies")
-
-test_function("plot", args = "x")
-test_function("plot", args = "y")
-test_function("plot", args = "col")
-
-test_error()
-
-success_msg("Good work!")
-```
+*** =attachments
+.Rprofile: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex8.Rprofile
+.init.R: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex8.init.R
+lab1_ex8.Rmd: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab1_ex8.Rmd
+lab.css: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab.css
+lab8_wk.RData: https://s3.amazonaws.com/assets.datacamp.com/production/course_1156/datasets/lab8_wk.RData
